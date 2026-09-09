@@ -10,3 +10,14 @@ git commit -m "your commite"
 git push origin master
 git pull origin msxter
 ```
+
+## Python Foundation:
+
+- Primative variables
+- Functions
+- Objects
+- Class
+- Class deep dive
+- Operation & Conditions
+- Loops
+- ....
