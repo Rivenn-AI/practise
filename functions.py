@@ -43,3 +43,19 @@ print("result3", result3)
 
 result4 = give_great(name="Justin")
 print("result3", result4)
+
+
+print("====Scopelar=====")
+
+b = 100
+
+# define
+
+
+def calculate(a):
+    c = a*b
+    print(f"the value of c; {c}")
+
+
+# call
+calculate(5)
