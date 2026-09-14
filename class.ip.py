@@ -36,6 +36,9 @@ class Dog(Animal):
     def protect(self):
         print("Yes i can protect you ")
 
+    def make_voice(self):
+        print(f"Bu {self.name} can make this voice {self.voice}")
+
 
 class Cat(Animal):
     # state
@@ -88,3 +91,27 @@ print(Dog.description)
 print(dog.voice)
 print("status", dog.status)
 print("status", cat.status)
+
+
+print("=====POLIMORPHISM====")
+# bir narsani bir necha xil shakilga ega bulshi
+# agar child tarkibida chaqrilgan method bulsa ushani oladi agar yuq bulsa parent classdan oladi
+
+print("-----")
+
+dog.make_voice()
+fish.make_voice()
+
+print("----")
+# fish> Fish >Animal> object
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance("MIT", object)
+result = a and b and c and d
+print(f"the result ", {result})
+
+# fish> Fish >Animal> object
+data = issubclass(Fish, Animal)
+data1 = issubclass(Animal, object)
+print("data", data, data1)
