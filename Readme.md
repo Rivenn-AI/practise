@@ -21,3 +21,14 @@ git pull origin msxter
 - Operation & Conditions
 - Loops
 - ....
+
+## Objects
+
+- In pyhton everything is object
+- import math # bu package ichda uzning define bor biz bemlol call qilib va unga method berib keta olamiz. Math bu maqsadli Object hisoblanadi. lekin bu objectning qanday ishlayotgani bilshimiz shart emas huddi moshini tormiziday.
+
+## Eng mashxur programming
+
+- Object orented programmming
+  - Abstruction, Incepsilation, Polimorphism, inheritence
+- Functional programmming

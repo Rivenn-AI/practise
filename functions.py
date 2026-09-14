@@ -1,3 +1,5 @@
+
+# ------------------functions--------------
 ''' Functions
 (1) Define and call
 (2) Parametr va argument
