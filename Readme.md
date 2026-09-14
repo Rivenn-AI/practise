@@ -14,6 +14,9 @@ git pull origin msxter
 ## Python Foundation:
 
 - Primative variables
+  - pip → package'ni o‘rnatadi
+  - import → package'ni Python kodiga olib kiradi
+  - Python o‘zi bilan birga juda ko‘p standard library modullarini olib keladi. Ularni odatda pip install qilish shart emas.
 - Functions
 - Objects
 - Class
@@ -32,3 +35,13 @@ git pull origin msxter
 - Object orented programmming
   - Abstruction, Incepsilation, Polimorphism, inheritence
 - Functional programmming
+
+## Primitive data type — bitta oddiy qiymatni saqlaydigan data type.
+
+```
+name = "Ali" # str
+age = 20 # int
+price = 15.5 # float
+is_student = True # bool
+nothing = None # NoneType
+```

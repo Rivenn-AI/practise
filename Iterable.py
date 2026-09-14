@@ -1,3 +1,8 @@
+import time
+import os
+from datetime import datetime
+import random
+import math
 print("====Iterable Objects & Range======")
 # Iterable objects >String dict tuple list range map filter
 
@@ -53,3 +58,21 @@ else:
     print("Logic is working without errors")
 finally:
     print("Everything is done ")
+
+print("====Practise====")
+
+print(math.sqrt(25))  # ildizdan chiqaradi
+print(math.pow(2, 3))
+print(math.pi)  # pi algebra
+
+number = random.randint(1, 10)
+print(number)
+
+now = datetime.now()
+print(now)
+print(os.getcwd())
+print(os.listdir())
+
+print("Start")
+time.sleep(2)
+print("End")

@@ -7,7 +7,7 @@
 '''
 
 
-import array  # pyhton package /modul. biz bularni import qilshimiz shart bulgan python package hiasoblanadi
+import array  # pyhton package /modul. biz bularni import qilshimiz shart bulgan python package hiasoblanadi. Modullar python bila default keladi
 # import math  # bu package ichda uzning define bor biz bemlol call qilib va unga method berib keta olamiz
 import math  # from math import ceil  bu anniq qilib chaqrib olish usuli
 print("====what is Object=====")
