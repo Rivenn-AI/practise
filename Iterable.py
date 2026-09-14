@@ -35,3 +35,21 @@ print(f"the name:{name} hobby {hobby} and balnce is {balance}")
 del person_obj["single"]  # del bu biz xoxlamagan stateni uchrish uchun
 for key in person_obj:
     print(f"key:{key} value=> {person_obj[key]}")
+
+
+print("====error hendiling=====")
+car_dict = dict(name="Toyota", year=2026, electr=True)
+
+try:
+    print("Passed here")
+    a = car_dict.speed
+    result = car_dict["origin"]
+    print("Result", result)
+except KeyError as err:  # xatolikning boshqa turlari ham bor
+    print("No origin found", err)
+except AttributeError as err:  # xatolikning boshqa turlari ham bor
+    print("No speed found", err)
+else:
+    print("Logic is working without errors")
+finally:
+    print("Everything is done ")
