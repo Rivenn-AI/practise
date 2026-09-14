@@ -1,7 +1,7 @@
 '''CLASS
    (1) what is class
    (2)ordinary va static properties
-   (3)special methods
+   (3)special methods / magic methods
 '''
 print("=====What is class")
 # classlar - blueprint for creation
@@ -48,3 +48,44 @@ new_message = Person.message
 print("new_message", new_message)
 # ordinary method
 Person.explain()
+
+print("=====maxsus methodlar=====")
+# Pyhtonning eng kup ishlatiladigan maxsus methodlar
+# __init__ __new__ __str__ __call__ __qetiten__ __oq__ __len__
+
+
+class Car():
+    # state
+    description = "This class rules about cars"
+
+    # constructor
+    def __new__(cls, *args):
+        print("*__new__")
+        return super().__new__(cls)
+
+    def __init__(self, name, year):
+        self.name = name
+        self.year = year
+
+    # method
+    def start_engine(self):
+        print(f"This {self.name} started engine")
+
+    def stop_engine(self):
+        print(f"This {self.name} stopped engine")
+
+    def __str__(self):
+        return f"the car name: {self.name} was produced {self.year}"
+
+    def __call__(self):
+        print("Object called by function")
+        return True
+
+
+my_car = Car("BMW", 2002)
+my_car.start_engine()
+my_car.stop_engine()
+your_car = Car("Toyota", 2040)
+print(your_car)
+response = your_car()
+print(response)
