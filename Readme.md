@@ -23,7 +23,11 @@ git pull origin msxter
 - Class deep dive
 - Operation & Conditions
 - Loops
-- ....
+- Tuple
+- List
+- array
+- Comprehension
+- Debugging
 
 ## Objects
 
