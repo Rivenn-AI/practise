@@ -8,7 +8,7 @@ print("========What is tuple: type vs list=====")
 
 
 # Literal
-numbs = [3, 6, 4, 7, 8]
+numbs = 3,  [6, 4, 7, 8]
 print(numbs)
 # car_dic = {"brand": "Ferare", "year": 1990}
 # constructor function
