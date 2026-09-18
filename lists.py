@@ -83,3 +83,67 @@ print("sort reverse:", numbers)
 numbs = [2, 50, 48, 300]
 new_numbs = sorted(numbs)
 print(f"the sorted numbs: {numbs} and new one {new_numbs}")
+
+print("========Lambada function=====")
+# Labda bu kichik annonymous functionlar xisoblanadi
+
+
+def calculate(x, y):
+    return x*y
+
+
+result = calculate(3, 5)
+print("result", result)
+
+people = [
+    ("robert", 29),
+    ("ali", 33),
+    ("riven", 22),
+    ("Michel", 12),
+]
+people.sort()
+print("people1", people)
+# sort by age via labda
+people.sort(key=lambda person: person[1])
+print("people2:", people)  # bu yoshi buycha tartiblab beradi
+
+print("========enumerate, map and filter=====")
+# enumerate for index & value
+animals = ["dog", "cat", "fish"]
+for element in enumerate(animals):
+    print("enimertaded", element)
+
+for (index, value) in enumerate(animals):
+    print(f"the index {index}. va qiymat {value}")
+
+# similar in dictioanry
+car_obj = dict(brand="ferrari", year=3000)
+result = car_obj.items()
+print("result", result)
+for (key, value) in result:
+    print(f"the key {key}. va qiymat {value}")
+
+print("------")
+cars = [
+    ("ferrari", 49),
+    ('Bmw', 44),
+    ('Audi', 116),
+    ("tayota", 34),
+    ("chevralet", 400),
+]
+# new_cars = []
+# for car in cars:
+#     new_cars.append(car[0])
+# print(new_cars)
+
+result1 = map(lambda car: car[0], cars)
+print(f"the result1{result1}  and type: {type(result1)}")
+
+new_cars = list(result1)
+print(new_cars)
+
+print("----")
+# filter uzning functionga ega
+result_filter = filter(lambda car: car[1] > 40, cars)
+print(f"the result1{result_filter}  and type: {type(result_filter)}")
+print(list(result_filter))
