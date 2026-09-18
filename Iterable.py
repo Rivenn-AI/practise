@@ -4,7 +4,7 @@ from datetime import datetime
 import random
 import math
 print("====Iterable Objects & Range======")
-# Iterable objects >String dict tuple list range map filter
+# Iterable objects >String dict tuple zip list range map filter
 
 
 # ------Range-----
